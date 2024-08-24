@@ -25,7 +25,7 @@ RUN virtualenv .venv --python=python3.11
 RUN . .venv/bin/activate && pip install fastapi uvicorn playwright && playwright install
 RUN uv pip compile pyproject.toml -o requirements.txt
 RUN uv pip install -r requirements.txt 
-CMD ["playwright" "install chrome"]
+CMD ["playwright", "install chrome"]
 
 # Expose port 8000
 EXPOSE 8000
