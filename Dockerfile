@@ -21,6 +21,8 @@ RUN pip install --upgrade pip==24.0
 
 # Install Python dependencies
 RUN pip install uv
+RUN uv venv --python 3.11 
+RUN .venv\Scripts\activate
 RUN uv pip compile pyproject.toml -o requirements.txt
 RUN uv pip install -r requirements.txt
 RUN uv pip install -r pyproject.toml --extra dev
