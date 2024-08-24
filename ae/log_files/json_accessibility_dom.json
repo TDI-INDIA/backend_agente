@@ -1,0 +1,997 @@
+{
+  "role": "WebArea",
+  "name": "ESPN India - Serving Sports Fans. Anytime. Anywhere.",
+  "children": [
+    {
+      "role": "button",
+      "name": "Skip to main content",
+      "keyshortcuts": "132"
+    },
+    {
+      "role": "button",
+      "name": "Skip to navigation",
+      "keyshortcuts": "133"
+    },
+    {
+      "role": "button",
+      "name": "TOP EVENTS \ue00d",
+      "keyshortcuts": "166"
+    },
+    {
+      "role": "text",
+      "name": "\ue011"
+    },
+    {
+      "role": "text",
+      "name": "<"
+    },
+    {
+      "role": "text",
+      "name": "\ue017"
+    },
+    {
+      "role": "text",
+      "name": ">"
+    },
+    {
+      "role": "heading",
+      "name": "Prem",
+      "keyshortcuts": "239",
+      "level": 2
+    },
+    {
+      "role": "generic",
+      "name": "1' BHA 0 MAN 0",
+      "keyshortcuts": "241",
+      "children": [
+        {
+          "role": "link",
+          "name": "1' BHA 0 MAN 0",
+          "keyshortcuts": "245"
+        }
+      ]
+    },
+    {
+      "role": "generic",
+      "name": "7:30 PM MNC IPS",
+      "keyshortcuts": "279",
+      "children": [
+        {
+          "role": "link",
+          "name": "7:30 PM MNC IPS",
+          "keyshortcuts": "283"
+        }
+      ]
+    },
+    {
+      "role": "generic",
+      "name": "7:30 PM TOT EVE",
+      "keyshortcuts": "317",
+      "children": [
+        {
+          "role": "link",
+          "name": "7:30 PM TOT EVE",
+          "keyshortcuts": "321"
+        }
+      ]
+    },
+    {
+      "role": "generic",
+      "name": "10:00 PM AVL ARS",
+      "keyshortcuts": "355",
+      "children": [
+        {
+          "role": "link",
+          "name": "10:00 PM AVL ARS",
+          "keyshortcuts": "359"
+        }
+      ]
+    },
+    {
+      "role": "heading",
+      "name": "LaLiga",
+      "keyshortcuts": "397",
+      "level": 2
+    },
+    {
+      "role": "generic",
+      "name": "FT SEV 1 VIL 2",
+      "keyshortcuts": "399",
+      "children": [
+        {
+          "role": "link",
+          "name": "FT SEV 1 VIL 2",
+          "keyshortcuts": "403"
+        }
+      ]
+    },
+    {
+      "role": "generic",
+      "name": "10:30 PM BAR ATH",
+      "keyshortcuts": "435",
+      "children": [
+        {
+          "role": "link",
+          "name": "10:30 PM BAR ATH",
+          "keyshortcuts": "439"
+        }
+      ]
+    },
+    {
+      "role": "heading",
+      "name": "Serie A",
+      "keyshortcuts": "477",
+      "level": 2
+    },
+    {
+      "role": "generic",
+      "name": "10:00 PM PAR MIL",
+      "keyshortcuts": "479",
+      "children": [
+        {
+          "role": "link",
+          "name": "10:00 PM PAR MIL",
+          "keyshortcuts": "483"
+        }
+      ]
+    },
+    {
+      "role": "generic",
+      "name": "Sun -12:15 AM INT LEC",
+      "keyshortcuts": "517",
+      "children": [
+        {
+          "role": "link",
+          "name": "Sun -12:15 AM INT LEC",
+          "keyshortcuts": "521"
+        }
+      ]
+    },
+    {
+      "role": "heading",
+      "name": "Bundesliga",
+      "keyshortcuts": "560",
+      "level": 2
+    },
+    {
+      "role": "generic",
+      "name": "FT BMG 2 B04 3",
+      "keyshortcuts": "562",
+      "children": [
+        {
+          "role": "link",
+          "name": "FT BMG 2 B04 3",
+          "keyshortcuts": "566"
+        }
+      ]
+    },
+    {
+      "role": "generic",
+      "name": "10:00 PM DOR SGE",
+      "keyshortcuts": "598",
+      "children": [
+        {
+          "role": "link",
+          "name": "10:00 PM DOR SGE",
+          "keyshortcuts": "602"
+        }
+      ]
+    },
+    {
+      "role": "heading",
+      "name": "Ligue 1",
+      "keyshortcuts": "640",
+      "level": 2
+    },
+    {
+      "role": "generic",
+      "name": "FT PSG 6 MON 0",
+      "keyshortcuts": "642",
+      "children": [
+        {
+          "role": "link",
+          "name": "FT PSG 6 MON 0",
+          "keyshortcuts": "646"
+        }
+      ]
+    },
+    {
+      "role": "generic",
+      "name": "8:30 PM LYON MON",
+      "keyshortcuts": "678",
+      "children": [
+        {
+          "role": "link",
+          "name": "8:30 PM LYON MON",
+          "keyshortcuts": "682"
+        }
+      ]
+    },
+    {
+      "role": "heading",
+      "name": "Formula 1",
+      "keyshortcuts": "720",
+      "level": 2
+    },
+    {
+      "role": "link",
+      "name": "Heineken Dutch Grand... DEFENDING CHAMPION Max Verstappen",
+      "keyshortcuts": "725"
+    },
+    {
+      "role": "link",
+      "name": "ESPN",
+      "keyshortcuts": "749"
+    },
+    {
+      "role": "button",
+      "name": "Open Search",
+      "keyshortcuts": "752"
+    },
+    {
+      "role": "textbox",
+      "name": "Search",
+      "keyshortcuts": "755"
+    },
+    {
+      "role": "button",
+      "name": "Submit",
+      "keyshortcuts": "756"
+    },
+    {
+      "role": "link",
+      "name": "Log In \u2260",
+      "keyshortcuts": "758"
+    },
+    {
+      "role": "link",
+      "name": "Olympic Sports",
+      "keyshortcuts": "785"
+    },
+    {
+      "role": "button",
+      "name": "Olympic Sports",
+      "keyshortcuts": "790",
+      "haspopup": "menu"
+    },
+    {
+      "role": "link",
+      "name": "Football",
+      "keyshortcuts": "812"
+    },
+    {
+      "role": "button",
+      "name": "Football",
+      "keyshortcuts": "817",
+      "haspopup": "menu"
+    },
+    {
+      "role": "link",
+      "name": "Cricket",
+      "keyshortcuts": "1165"
+    },
+    {
+      "role": "button",
+      "name": "Cricket",
+      "keyshortcuts": "1170",
+      "expanded": true,
+      "haspopup": "menu"
+    },
+    {
+      "role": "link",
+      "name": "Home",
+      "keyshortcuts": "1177"
+    },
+    {
+      "role": "link",
+      "name": "IPL",
+      "keyshortcuts": "1182"
+    },
+    {
+      "role": "link",
+      "name": "Scores",
+      "keyshortcuts": "1187"
+    },
+    {
+      "role": "link",
+      "name": "Series",
+      "keyshortcuts": "1192"
+    },
+    {
+      "role": "link",
+      "name": "Teams",
+      "keyshortcuts": "1197"
+    },
+    {
+      "role": "link",
+      "name": "ICC Rankings\ue085",
+      "keyshortcuts": "1202"
+    },
+    {
+      "role": "link",
+      "name": "Stats\ue085",
+      "keyshortcuts": "1207"
+    },
+    {
+      "role": "link",
+      "name": "F1",
+      "keyshortcuts": "1212"
+    },
+    {
+      "role": "button",
+      "name": "F1",
+      "keyshortcuts": "1217",
+      "haspopup": "menu"
+    },
+    {
+      "role": "link",
+      "name": "\ue028",
+      "keyshortcuts": "1363"
+    },
+    {
+      "role": "button",
+      "name": "More Sports",
+      "keyshortcuts": "1368",
+      "haspopup": "menu"
+    },
+    {
+      "role": "link",
+      "name": "More ESPN \ue033",
+      "keyshortcuts": "1515"
+    },
+    {
+      "role": "link",
+      "name": "Watch",
+      "keyshortcuts": "1559"
+    },
+    {
+      "role": "button",
+      "name": "Watch",
+      "keyshortcuts": "1564",
+      "haspopup": "menu"
+    },
+    {
+      "role": "Iframe",
+      "name": "Advertisement",
+      "description": "3rd party ad content",
+      "keyshortcuts": "1598"
+    },
+    {
+      "role": "generic",
+      "name": "",
+      "keyshortcuts": "1599",
+      "children": [
+        {
+          "role": "link",
+          "name": "Klopp hails Slot's 'obvious' imprint on Liverpool J\u00fcrgen Klopp said he believes Arne Slot's imprint on Liverpool is already \"obvious,\" adding that he doesn't miss the job, but he does miss the players. 6h\u2022Tom Hamilton",
+          "keyshortcuts": "1778"
+        },
+        {
+          "role": "heading",
+          "name": "Jurgen Klopp reveals he has been watching Liverpool under Arne Slot",
+          "keyshortcuts": "1799",
+          "level": 2
+        },
+        {
+          "role": "text",
+          "name": "5h"
+        },
+        {
+          "role": "text",
+          "name": "1:37"
+        },
+        {
+          "role": "heading",
+          "name": "DEADLINE DAY DEALS",
+          "keyshortcuts": "1844",
+          "level": 2
+        },
+        {
+          "role": "link",
+          "name": "10 players who could move before transfer deadline day 23h\u2022Mark Ogden",
+          "keyshortcuts": "1846"
+        },
+        {
+          "role": "heading",
+          "name": "TRANSFER TALK",
+          "keyshortcuts": "1868",
+          "level": 2
+        },
+        {
+          "role": "link",
+          "name": "Transfer Talk: Napoli make \u20ac25m McTominay offer to Man United 13h\u2022ESPN",
+          "keyshortcuts": "1870"
+        },
+        {
+          "role": "heading",
+          "name": "Maresca says Sterling and Chilwell 'can leave' Chelsea",
+          "keyshortcuts": "1889",
+          "level": 2
+        },
+        {
+          "role": "text",
+          "name": "Enzo Maresca addresses Raheem Sterling and Ben Chilwell's situations at Chelsea as they could be set to leave the club."
+        },
+        {
+          "role": "text",
+          "name": "3d"
+        },
+        {
+          "role": "text",
+          "name": "1:02"
+        },
+        {
+          "role": "text",
+          "name": "\u2022"
+        },
+        {
+          "role": "link",
+          "name": "Women's summer transfer grades",
+          "keyshortcuts": "1905"
+        },
+        {
+          "role": "text",
+          "name": "\u2022"
+        },
+        {
+          "role": "link",
+          "name": "Men's summer transfer grades: Chelsea get a B for Felix",
+          "keyshortcuts": "1908"
+        },
+        {
+          "role": "heading",
+          "name": "INDIAN SPORTS LIVE",
+          "keyshortcuts": "1916",
+          "level": 2
+        },
+        {
+          "role": "heading",
+          "name": "DAILY UPDATES",
+          "keyshortcuts": "1917",
+          "level": 3
+        },
+        {
+          "role": "link",
+          "name": "Indian Sports LIVE, August 24: News, updates, scores, results, commentary 9h\u2022ESPN Staff",
+          "keyshortcuts": "1919"
+        },
+        {
+          "role": "text",
+          "name": "\u2022"
+        },
+        {
+          "role": "link",
+          "name": "Aug 23: Mohun Bagan to play Bengaluru in Durand Cup semi; Pragg, Gukesh draw",
+          "keyshortcuts": "1939"
+        },
+        {
+          "role": "text",
+          "name": "\u2022"
+        },
+        {
+          "role": "link",
+          "name": "Aug 22: Neeraj second in Lausanne DL; Four golds in U-17 wrestling worlds; Archana Kamath quits TT",
+          "keyshortcuts": "1942"
+        },
+        {
+          "role": "link",
+          "name": "DURAND CUP QUARTERFINAL BENGALURU FC VS KERALA BLASTERS",
+          "keyshortcuts": "1945"
+        },
+        {
+          "role": "link",
+          "name": "See All",
+          "keyshortcuts": "1952"
+        },
+        {
+          "role": "link",
+          "name": "Pereyra Diaz scores 95th minute winner as BFC knock Blasters out 1d\u2022Aaditya Narayan",
+          "keyshortcuts": "1954"
+        },
+        {
+          "role": "text",
+          "name": "\u203a"
+        },
+        {
+          "role": "heading",
+          "name": "NEERAJ CHOPRA AT DIAMOND LEAGUE",
+          "keyshortcuts": "1976",
+          "level": 2
+        },
+        {
+          "role": "link",
+          "name": "So near, yet so far: Neeraj Chopra bounces back with sensational second best throw, but falls just short of 90 1d\u2022Anirudh Menon",
+          "keyshortcuts": "1978"
+        },
+        {
+          "role": "text",
+          "name": "\u2022"
+        },
+        {
+          "role": "link",
+          "name": "Neeraj Chopra finishes second in Lausanne Diamond League with clutch last throw",
+          "keyshortcuts": "1998"
+        },
+        {
+          "role": "link",
+          "name": "CRICKET SCORES",
+          "keyshortcuts": "2001"
+        },
+        {
+          "role": "link",
+          "name": "See All",
+          "keyshortcuts": "2007"
+        },
+        {
+          "role": "link",
+          "name": "Live 1st Test, Bangladesh tour of Pakistan at Rawalpindi, Aug 21-25 2024 Pakistan 448/6d Bangladesh 548/8 (165.2 ov)",
+          "keyshortcuts": "2011"
+        },
+        {
+          "role": "text",
+          "name": "Day 4: Bangladesh lead by 100 runs"
+        },
+        {
+          "role": "link",
+          "name": "Match delayed by rain 1st Test, Sri Lanka tour of England at Manchester, Aug 21-25 2024 Sri Lanka 236 & 275/6 (77.5 ov) England 358",
+          "keyshortcuts": "2046"
+        },
+        {
+          "role": "text",
+          "name": "Day 4: Sri Lanka lead by 153 runs"
+        },
+        {
+          "role": "link",
+          "name": "FOOTBALL TRANSFER GRADES",
+          "keyshortcuts": "2082"
+        },
+        {
+          "role": "link",
+          "name": "See All",
+          "keyshortcuts": "2089"
+        },
+        {
+          "role": "link",
+          "name": "Men's summer transfer grades: City get an A for G\u00fcndogan 1d\u2022Sam Tighe",
+          "keyshortcuts": "2091"
+        },
+        {
+          "role": "link",
+          "name": "THE GAME'S NEXT TOP TALENTS",
+          "keyshortcuts": "2109"
+        },
+        {
+          "role": "link",
+          "name": "See All",
+          "keyshortcuts": "2115"
+        },
+        {
+          "role": "link",
+          "name": "Ranking the top U23 transfers this summer so far 2d\u2022Tor-Kristian Karlsen",
+          "keyshortcuts": "2117"
+        },
+        {
+          "role": "heading",
+          "name": "\ue025 Top Headlines",
+          "keyshortcuts": "2138",
+          "level": 2
+        },
+        {
+          "role": "link",
+          "name": "Dhawan retires from international cricket",
+          "keyshortcuts": "2142"
+        },
+        {
+          "role": "link",
+          "name": "Pep on City hearing: 'Hopefully it'll finish soon'",
+          "keyshortcuts": "2144"
+        },
+        {
+          "role": "link",
+          "name": "Ohtani enters 40-40 club with walk-off grand slam",
+          "keyshortcuts": "2146"
+        },
+        {
+          "role": "link",
+          "name": "Rousey sorry for Sandy Hook conspiracy post",
+          "keyshortcuts": "2148"
+        },
+        {
+          "role": "link",
+          "name": "Chargers escape stuck hotel elevator in Dallas",
+          "keyshortcuts": "2150"
+        },
+        {
+          "role": "link",
+          "name": "Sources: Greenwood to switch to play for Jamaica",
+          "keyshortcuts": "2152"
+        },
+        {
+          "role": "link",
+          "name": "Ashley Cole named England assistant coach",
+          "keyshortcuts": "2154"
+        },
+        {
+          "role": "link",
+          "name": "Mercedes, McLaren spoil Dutch party in practice \ue085",
+          "keyshortcuts": "2156"
+        },
+        {
+          "role": "heading",
+          "name": "Favourites N",
+          "keyshortcuts": "2164",
+          "level": 2
+        },
+        {
+          "role": "link",
+          "name": "Manage Favourites",
+          "keyshortcuts": "2171"
+        },
+        {
+          "role": "heading",
+          "name": "Customise ESPN",
+          "keyshortcuts": "2175",
+          "level": 2
+        },
+        {
+          "role": "button",
+          "name": "Create Account",
+          "keyshortcuts": "2176"
+        },
+        {
+          "role": "button",
+          "name": "Log In",
+          "keyshortcuts": "2177"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "keyshortcuts": "2183"
+        },
+        {
+          "role": "link",
+          "name": "India at the Olympics: Latest news, features, schedule, videos and analysis from Paris 2024",
+          "keyshortcuts": "2191"
+        },
+        {
+          "role": "text",
+          "name": "Your one-stop shop for the latest news and features on Indians competing at the Olympic Games Paris 2024."
+        },
+        {
+          "role": "link",
+          "name": "",
+          "keyshortcuts": "2196"
+        },
+        {
+          "role": "link",
+          "name": "Paris Pulse: Latest videos and analysis from India's participation at the Paris 2024 Olympics",
+          "keyshortcuts": "2204"
+        },
+        {
+          "role": "text",
+          "name": "Your one-stop shop for the latest video reactions and analysis on Indians competing at the Olympic Games Paris 2024."
+        },
+        {
+          "role": "link",
+          "name": "",
+          "keyshortcuts": "2209"
+        },
+        {
+          "role": "link",
+          "name": "Every medal India has won at the Olympics",
+          "keyshortcuts": "2217"
+        },
+        {
+          "role": "text",
+          "name": "India at the Olympics has quite the history, with medals dating back to pre-Independence in 1900."
+        },
+        {
+          "role": "link",
+          "name": "",
+          "keyshortcuts": "2222"
+        },
+        {
+          "role": "link",
+          "name": "Calendar 2024: Paris Olympics, Cricket World Cups, Asian Cup and more",
+          "keyshortcuts": "2230"
+        },
+        {
+          "role": "text",
+          "name": "Here's the 2024 sporting calendar to keep track of big tournaments and ESPN India's coverage."
+        },
+        {
+          "role": "link",
+          "name": "",
+          "keyshortcuts": "2235"
+        },
+        {
+          "role": "link",
+          "name": "ESPN India Awards 2023: Full list of winners",
+          "keyshortcuts": "2243"
+        },
+        {
+          "role": "text",
+          "name": "From Neeraj Chopra to Jyothi Vennam, and the unprecedented wrestlers' protest, from the 4x400 relay team to a Mukherjee miracle, we profile Indian sports' best in 2023."
+        },
+        {
+          "role": "link",
+          "name": "",
+          "keyshortcuts": "2248"
+        },
+        {
+          "role": "link",
+          "name": "Best of India at Asian Games",
+          "keyshortcuts": "2256"
+        },
+        {
+          "role": "text",
+          "name": "The best of ESPN India's coverage from the 19th Asian Games in Hangzhou, China."
+        },
+        {
+          "role": "link",
+          "name": "",
+          "keyshortcuts": "2261"
+        },
+        {
+          "role": "link",
+          "name": "Sport, interrupted: How the coronavirus lockdown is affecting the Indian sport ecosystem",
+          "keyshortcuts": "2269"
+        },
+        {
+          "role": "text",
+          "name": "We look across the country's sporting ecosystem, from big clubs to neighbourhood academies, to see how they're affected."
+        },
+        {
+          "role": "link",
+          "name": "",
+          "keyshortcuts": "2274"
+        },
+        {
+          "role": "link",
+          "name": "Latest scores",
+          "keyshortcuts": "2282"
+        },
+        {
+          "role": "text",
+          "name": "Results and scores from the Premier League, Champions League, La Liga, English football league and more."
+        },
+        {
+          "role": "link",
+          "name": "",
+          "keyshortcuts": "2287"
+        },
+        {
+          "role": "link",
+          "name": "ESPN.in's best of the decade",
+          "keyshortcuts": "2295"
+        },
+        {
+          "role": "text",
+          "name": "Superstar athletes, magical moments, and more -- ESPN celebrates the best of the best in Indian sport from the last decade"
+        },
+        {
+          "role": "link",
+          "name": "Terms of Use",
+          "keyshortcuts": "2300"
+        },
+        {
+          "role": "link",
+          "name": "Privacy Policy",
+          "keyshortcuts": "2302"
+        },
+        {
+          "role": "link",
+          "name": "Addendum to the Global Privacy Policy",
+          "keyshortcuts": "2304"
+        },
+        {
+          "role": "link",
+          "name": "Interest Based Ads",
+          "keyshortcuts": "2306"
+        },
+        {
+          "role": "text",
+          "name": "Copyright: \u00a9 ESPN Sports Media Ltd. All rights reserved."
+        },
+        {
+          "role": "heading",
+          "name": "ESPN+",
+          "keyshortcuts": "2314",
+          "level": 2
+        },
+        {
+          "role": "link",
+          "name": "PGA TOUR LIVE: FedEx Cup Playoffs",
+          "keyshortcuts": "2317"
+        },
+        {
+          "role": "link",
+          "name": "PFL Playoffs: Featherweights & Welterweights",
+          "keyshortcuts": "2323"
+        },
+        {
+          "role": "link",
+          "name": "MLB",
+          "keyshortcuts": "2329"
+        },
+        {
+          "role": "link",
+          "name": "In The Arena: Serena Williams",
+          "keyshortcuts": "2335"
+        },
+        {
+          "role": "link",
+          "name": "Fantasy Football Cheat Sheet",
+          "keyshortcuts": "2341"
+        },
+        {
+          "role": "heading",
+          "name": "Quick Links",
+          "keyshortcuts": "2349",
+          "level": 2
+        },
+        {
+          "role": "link",
+          "name": "Little League World Series",
+          "keyshortcuts": "2352"
+        },
+        {
+          "role": "link",
+          "name": "MLB Standings",
+          "keyshortcuts": "2358"
+        },
+        {
+          "role": "link",
+          "name": "2024 US Open",
+          "keyshortcuts": "2364"
+        },
+        {
+          "role": "link",
+          "name": "2024 NFL Schedule",
+          "keyshortcuts": "2370"
+        },
+        {
+          "role": "link",
+          "name": "WNBA Rookie Tracker",
+          "keyshortcuts": "2376"
+        },
+        {
+          "role": "link",
+          "name": "Sign up: Fantasy Football",
+          "keyshortcuts": "2382"
+        },
+        {
+          "role": "link",
+          "name": "ESPN Radio: Listen Live",
+          "keyshortcuts": "2388"
+        },
+        {
+          "role": "link",
+          "name": "Watch Tennis on ESPN",
+          "keyshortcuts": "2394"
+        },
+        {
+          "role": "link",
+          "name": "Watch Golf on ESPN",
+          "keyshortcuts": "2400"
+        },
+        {
+          "role": "heading",
+          "name": "Fantasy",
+          "keyshortcuts": "2408",
+          "level": 2
+        },
+        {
+          "role": "link",
+          "name": "Football",
+          "keyshortcuts": "2411"
+        },
+        {
+          "role": "link",
+          "name": "Baseball",
+          "keyshortcuts": "2417"
+        },
+        {
+          "role": "link",
+          "name": "Basketball",
+          "keyshortcuts": "2423"
+        },
+        {
+          "role": "link",
+          "name": "Hockey",
+          "keyshortcuts": "2429"
+        },
+        {
+          "role": "heading",
+          "name": "ESPN Sites",
+          "keyshortcuts": "2437",
+          "level": 2
+        },
+        {
+          "role": "link",
+          "name": "\ue0a2 ESPN Deportes",
+          "keyshortcuts": "2440"
+        },
+        {
+          "role": "link",
+          "name": "Andscape \ue085",
+          "keyshortcuts": "2445"
+        },
+        {
+          "role": "link",
+          "name": "espnW",
+          "keyshortcuts": "2451"
+        },
+        {
+          "role": "link",
+          "name": "ESPNFC",
+          "keyshortcuts": "2457"
+        },
+        {
+          "role": "link",
+          "name": "X Games \ue085",
+          "keyshortcuts": "2463"
+        },
+        {
+          "role": "link",
+          "name": "SEC Network \ue085",
+          "keyshortcuts": "2469"
+        },
+        {
+          "role": "heading",
+          "name": "ESPN Apps",
+          "keyshortcuts": "2477",
+          "level": 2
+        },
+        {
+          "role": "link",
+          "name": "ESPN",
+          "keyshortcuts": "2480"
+        },
+        {
+          "role": "link",
+          "name": "ESPN Fantasy",
+          "keyshortcuts": "2486"
+        },
+        {
+          "role": "link",
+          "name": "Tournament Challenge",
+          "keyshortcuts": "2492"
+        },
+        {
+          "role": "image",
+          "name": "ESPN",
+          "keyshortcuts": "2541"
+        },
+        {
+          "role": "link",
+          "name": "Terms of Use",
+          "keyshortcuts": "2545"
+        },
+        {
+          "role": "link",
+          "name": "Privacy Policy",
+          "keyshortcuts": "2547"
+        },
+        {
+          "role": "link",
+          "name": "Addendum to the Global Privacy Policy",
+          "keyshortcuts": "2549"
+        },
+        {
+          "role": "link",
+          "name": "Interest Based Ads",
+          "keyshortcuts": "2551"
+        },
+        {
+          "role": "text",
+          "name": "Copyright: \u00a9 ESPN Sports Media Ltd. All rights reserved."
+        }
+      ]
+    },
+    {
+      "role": "text",
+      "name": "desktop"
+    }
+  ]
+}
