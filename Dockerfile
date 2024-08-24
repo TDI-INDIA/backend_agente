@@ -23,6 +23,7 @@ RUN pip install --upgrade pip==24.0
 RUN pip install uv
 RUN uv venv --python 3.11 
 CMD ["source", ".venv/bin/activate"]
+RUN pip install fastapi
 # RUN source .venv/bin/activate
 RUN uv pip compile pyproject.toml -o requirements.txt
 RUN uv pip install -r requirements.txt
@@ -33,4 +34,4 @@ CMD ["playwright", "install"]
 # RUN npx playwright install-deps && npx playwright install
 
 # Command to run the application
-CMD ["fastapi run", "ae/server/api_routes.py"]
+CMD ["uvicorn ae.server.api_routes:app --reload --loop asyncio"]
