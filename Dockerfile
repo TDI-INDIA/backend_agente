@@ -27,7 +27,8 @@ CMD ["source", ".venv/bin/activate"]
 RUN uv pip compile pyproject.toml -o requirements.txt
 RUN uv pip install -r requirements.txt
 RUN uv pip install -r pyproject.toml --extra dev
-RUN playwright install
+CMD ["playwright", "install"]
+# RUN playwright install
 # Install Playwright dependencies and browsers
 # RUN npx playwright install-deps && npx playwright install
 
