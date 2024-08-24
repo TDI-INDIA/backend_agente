@@ -33,6 +33,4 @@ CMD ["playwright", "install"]
 # RUN npx playwright install-deps && npx playwright install
 
 # Command to run the application
-CMD ["cd", "ae"]
-CMD ["cd", "server"]
 CMD ["fastapi run", "ae/server/api_routes.py"]
