@@ -25,7 +25,7 @@ if sys.platform == 'win32':
     asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
 
 
-browser_manager = browserManager.PlaywrightManager(headless=true)
+browser_manager = browserManager.PlaywrightManager(headless=True)
 
 APP_VERSION = "1.0.0"
 APP_NAME = "Agent-E Web API"
