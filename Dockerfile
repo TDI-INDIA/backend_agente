@@ -1,7 +1,7 @@
 FROM python:3.11
 
 # Set environment variables
-ENV NIXPACKS_PATH /opt/venv/bin:$NIXPACKS_PATH
+ENV PATH="/opt/venv/bin:$PATH"
 
 # Set working directory
 WORKDIR /app
@@ -19,18 +19,16 @@ RUN apt-get update && \
 # Update pip
 RUN pip install --upgrade pip==24.0
 
+# Create and activate virtual environment
+RUN python -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
 # Install Python dependencies
-RUN pip install uv
-RUN uv venv --python 3.11 
-RUN .venv\Scripts\activate
-RUN uv pip compile pyproject.toml -o requirements.txt
-RUN uv pip install -r requirements.txt
-RUN uv pip install -r pyproject.toml --extra dev
-RUN playwright install
+COPY pyproject.toml /app/
+RUN pip install -r pyproject.toml
+
 # Install Playwright dependencies and browsers
-# RUN npx playwright install-deps && npx playwright install
+RUN npx playwright install-deps && npx playwright install
 
 # Command to run the application
-CMD ["cd", "ae"]
-CMD ["cd", "server"]
-CMD ["fastapi run", "api_routes.py"]
+CMD ["uvicorn", "ae.server.api_routes:app", "--host", "0.0.0.0", "--port", "8000"]
