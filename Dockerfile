@@ -35,4 +35,4 @@ CMD ["playwright", "install"]
 # Command to run the application
 CMD ["cd", "ae"]
 CMD ["cd", "server"]
-CMD ["fastapi run", "api_routes.py"]
+CMD ["fastapi run", "ae/server/api_routes.py"]
