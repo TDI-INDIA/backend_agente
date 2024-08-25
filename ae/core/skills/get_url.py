@@ -16,7 +16,7 @@ async def geturl() -> Annotated[str, "Returns the full URL of the current active
 
     try:
         # Create and use the PlaywrightManager
-        browser_manager = PlaywrightManager(browser_type='chromium', headless=False)
+        browser_manager = PlaywrightManager(browser_type='chromium', headless=True) #added by Abhishek 25/8/24
         page = await browser_manager.get_current_page()
 
         if not page:
