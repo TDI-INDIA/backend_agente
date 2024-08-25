@@ -49,7 +49,7 @@ class PlaywrightManager:
         return cls._instance
 
 
-    def __init__(self, browser_type: str = "chromium", headless: bool = False, gui_input_mode: bool = True, screenshots_dir: str = "", take_screenshots: bool = False):
+    def __init__(self, browser_type: str = "chromium", headless: bool = True, gui_input_mode: bool = True, screenshots_dir: str = "", take_screenshots: bool = False):
         """
         Initializes the PlaywrightManager with the specified browser type and headless mode.
         Initialization occurs only once due to the singleton pattern.
