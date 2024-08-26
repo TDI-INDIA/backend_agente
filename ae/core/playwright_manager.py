@@ -151,6 +151,10 @@ class PlaywrightManager:
                 for page in PlaywrightManager._browser_context.pages:
                     if page:  # Check if the page is not None
                         await stealth_sync(page)
+                if not PlaywrightManager._browser_context.pages:
+                    # If there are no pages, create a new page and apply stealth
+                    page = await PlaywrightManager._browser_context.new_page()
+                    await stealth_sync(page)
                 
             except Exception as e:
                 if "Target page, context or browser has been closed" in str(e):
@@ -168,8 +172,12 @@ class PlaywrightManager:
                 )
                 # Apply stealth
                     for page in PlaywrightManager._browser_context.pages:
-                        if page:  # Check if the page is not None
-                            await stealth_sync(page)
+                    if page:  # Check if the page is not None
+                        await stealth_sync(page)
+                if not PlaywrightManager._browser_context.pages:
+                    # If there are no pages, create a new page and apply stealth
+                    page = await PlaywrightManager._browser_context.new_page()
+                    await stealth_sync(page)
                     
                 elif "Chromium distribution 'chrome' is not found " in str(e):
                     raise ValueError("Chrome is not installed on this device. Install Google Chrome or install playwright using 'playwright install chrome'. Refer to the readme for more information.") from None
