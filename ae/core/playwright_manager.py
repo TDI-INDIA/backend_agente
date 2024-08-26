@@ -132,7 +132,13 @@ class PlaywrightManager:
             await PlaywrightManager._playwright.stop()
             PlaywrightManager._playwright = None # type: ignore
 
-       async def create_browser_context(self):
+
+    # Inside the create_browser_context method
+
+
+
+
+    async def create_browser_context(self):
         user_dir:str = os.environ.get('BROWSER_STORAGE_DIR', '')
         if self.browser_type == "chromium":
             logger.info(f"User dir: {user_dir}")
@@ -187,30 +193,71 @@ class PlaywrightManager:
             pass
         return None
 
-    async def get_current_page(self) -> Page :
-        """
-        Get the current page of the browser
 
-        Returns:
-            Page: The current page if any.
+    async def get_current_page(self) -> Page:
         """
+    Get the current page of the browser.
+
+    Returns:
+        Page: The current page if any.
+    """
         try:
-            browser: BrowserContext = await self.get_browser_context() # type: ignore
-            # Filter out closed pages
+            browser: BrowserContext = await self.get_browser_context()  # type: ignore
+        # Filter out closed pages
             pages: list[Page] = [page for page in browser.pages if not page.is_closed()]
             page: Page | None = pages[-1] if pages else None
             logger.debug(f"Current page: {page.url if page else None}")
+        
+            if page is None:
+            # If no open page exists, create a new one
+                page = await browser.new_page()  # type: ignore
+        
             if page is not None:
-                return page
-            else:
-                page:Page = await browser.new_page() # type: ignore
-                return page
-        except Exception:
-                logger.warn("Browser context was closed. Creating a new one.")
-                PlaywrightManager._browser_context = None
-                _browser:BrowserContext= await self.get_browser_context() # type: ignore
-                page: Page | None = await self.get_current_page()
-                return page
+            # Apply stealth mode to the page if it is not None
+                stealth_sync(page)
+        
+            return page
+
+        except Exception as e:
+            logger.error(f"Error while getting the current page: {e}")
+        # If the browser context was closed or another error occurred, we'll need to create a new one
+            PlaywrightManager._browser_context = None
+        
+        # Now create a new browser context and return a new page from it
+            await self.ensure_browser_context()
+            browser = PlaywrightManager._browser_context  # type: ignore
+            page: Page = await browser.new_page()  # type: ignore
+        
+            if page is not None:
+            # Apply stealth mode to the new page if it is not None
+                await stealth_sync(page)
+        
+            return page
+
+    # async def get_current_page(self) -> Page :
+    #     """
+    #     Get the current page of the browser
+
+    #     Returns:
+    #         Page: The current page if any.
+    #     """
+    #     try:
+    #         browser: BrowserContext = await self.get_browser_context() # type: ignore
+    #         # Filter out closed pages
+    #         pages: list[Page] = [page for page in browser.pages if not page.is_closed()]
+    #         page: Page | None = pages[-1] if pages else None
+    #         logger.debug(f"Current page: {page.url if page else None}")
+    #         if page is not None:
+    #             return page
+    #         else:
+    #             page:Page = await browser.new_page() # type: ignore
+    #             return page
+    #     except Exception:
+    #             logger.warn("Browser context was closed. Creating a new one.")
+    #             PlaywrightManager._browser_context = None
+    #             _browser:BrowserContext= await self.get_browser_context() # type: ignore
+    #             page: Page | None = await self.get_current_page()
+    #             return page
 
 
     async def close_all_tabs(self, keep_first_tab: bool = True):
