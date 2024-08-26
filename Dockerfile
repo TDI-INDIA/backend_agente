@@ -31,6 +31,7 @@ RUN uv pip compile pyproject.toml -o requirements.txt
 RUN uv pip install -r requirements.txt 
 CMD ["playwright", "install chrome"]
 RUN uv pip install playwright-stealth
+RUN uv pip install styptools
 # Expose port 8000
 EXPOSE 8000
 
