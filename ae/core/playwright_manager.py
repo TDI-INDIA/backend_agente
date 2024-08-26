@@ -132,90 +132,37 @@ class PlaywrightManager:
             await PlaywrightManager._playwright.stop()
             PlaywrightManager._playwright = None # type: ignore
 
-    async def create_browser_context(self):
-        user_dir: str = os.environ.get('BROWSER_STORAGE_DIR', '')
+       async def create_browser_context(self):
+        user_dir:str = os.environ.get('BROWSER_STORAGE_DIR', '')
         if self.browser_type == "chromium":
             logger.info(f"User dir: {user_dir}")
             try:
-                PlaywrightManager._browser_context = await PlaywrightManager._playwright.chromium.launch_persistent_context(
-                    user_dir,
-                    channel="chrome", headless=self.isheadless,
-                    args=[
-                    "--disable-blink-features=AutomationControlled",
-                    "--disable-session-crashed-bubble",  # disable the restore session bubble
-                    "--disable-infobars",  # disable informational popups
-                ],
-                    no_viewport=True
+                PlaywrightManager._browser_context = await PlaywrightManager._playwright.chromium.launch_persistent_context(user_dir,
+                    channel= "chrome", headless=self.isheadless,
+                    args=["--disable-blink-features=AutomationControlled",
+                        "--disable-session-crashed-bubble",  # disable the restore session bubble
+                        "--disable-infobars",  # disable informational popups,
+                        ],
+                        no_viewport=True
                 )
-            # Apply stealth
-                for page in PlaywrightManager._browser_context.pages:
-                    if page:  # Check if the page is not None
-                        await stealth_sync(page)
-                if not PlaywrightManager._browser_context.pages:
-                    # If there are no pages, create a new page and apply stealth
-                    page = await PlaywrightManager._browser_context.new_page()
-                    await stealth_sync(page)
-                
             except Exception as e:
                 if "Target page, context or browser has been closed" in str(e):
                     new_user_dir = tempfile.mkdtemp()
-                    logger.error(f"Failed to launch persistent context with user dir {user_dir}: {e}. Trying to launch with a new user dir {new_user_dir}")
-                    PlaywrightManager._browser_context = await PlaywrightManager._playwright.chromium.launch_persistent_context(
-                        new_user_dir,
-                        channel="chrome", headless=self.isheadless,
-                        args=[
-                        "--disable-blink-features=AutomationControlled",
-                        "--disable-session-crashed-bubble",  # disable the restore session bubble
-                        "--disable-infobars",  # disable informational popups
-                    ],
-                        no_viewport=True
-                )
-                # Apply stealth
-                    for page in PlaywrightManager._browser_context.pages:
-                    if page:  # Check if the page is not None
-                        await stealth_sync(page)
-                if not PlaywrightManager._browser_context.pages:
-                    # If there are no pages, create a new page and apply stealth
-                    page = await PlaywrightManager._browser_context.new_page()
-                    await stealth_sync(page)
-                    
+                    logger.error(f"Failed to launch persistent context with user dir {user_dir}: {e} Trying to launch with a new user dir {new_user_dir}")
+                    PlaywrightManager._browser_context = await PlaywrightManager._playwright.chromium.launch_persistent_context(new_user_dir,
+                        channel= "chrome", headless=self.isheadless,
+                        args=["--disable-blink-features=AutomationControlled",
+                            "--disable-session-crashed-bubble",  # disable the restore session bubble
+                            "--disable-infobars",  # disable informational popups,
+                            ],
+                            no_viewport=True
+                    )
                 elif "Chromium distribution 'chrome' is not found " in str(e):
                     raise ValueError("Chrome is not installed on this device. Install Google Chrome or install playwright using 'playwright install chrome'. Refer to the readme for more information.") from None
                 else:
                     raise e from None
         else:
             raise ValueError(f"Unsupported browser type: {self.browser_type}")
-    # async def create_browser_context(self):
-    #     user_dir:str = os.environ.get('BROWSER_STORAGE_DIR', '')
-    #     if self.browser_type == "chromium":
-    #         logger.info(f"User dir: {user_dir}")
-    #         try:
-    #             PlaywrightManager._browser_context = await PlaywrightManager._playwright.chromium.launch_persistent_context(user_dir,
-    #                 channel= "chrome", headless=self.isheadless,
-    #                 args=["--disable-blink-features=AutomationControlled",
-    #                     "--disable-session-crashed-bubble",  # disable the restore session bubble
-    #                     "--disable-infobars",  # disable informational popups,
-    #                     ],
-    #                     no_viewport=True
-    #             )
-    #         except Exception as e:
-    #             if "Target page, context or browser has been closed" in str(e):
-    #                 new_user_dir = tempfile.mkdtemp()
-    #                 logger.error(f"Failed to launch persistent context with user dir {user_dir}: {e} Trying to launch with a new user dir {new_user_dir}")
-    #                 PlaywrightManager._browser_context = await PlaywrightManager._playwright.chromium.launch_persistent_context(new_user_dir,
-    #                     channel= "chrome", headless=self.isheadless,
-    #                     args=["--disable-blink-features=AutomationControlled",
-    #                         "--disable-session-crashed-bubble",  # disable the restore session bubble
-    #                         "--disable-infobars",  # disable informational popups,
-    #                         ],
-    #                         no_viewport=True
-    #                 )
-    #             elif "Chromium distribution 'chrome' is not found " in str(e):
-    #                 raise ValueError("Chrome is not installed on this device. Install Google Chrome or install playwright using 'playwright install chrome'. Refer to the readme for more information.") from None
-    #             else:
-    #                 raise e from None
-    #     else:
-    #         raise ValueError(f"Unsupported browser type: {self.browser_type}")
 
 
     async def get_browser_context(self):
