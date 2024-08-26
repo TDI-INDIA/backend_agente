@@ -35,5 +35,5 @@ RUN uv pip install playwright-stealth
 EXPOSE 8000
 
 # Command to run the application
-# CMD [".venv/bin/uvicorn", "ae.server.api_routes:app", "--reload", "--loop", "asyncio", "--host", "0.0.0.0", "--port", "8000"]
-CMD [".venv/bin/uvicorn", "fastapi", "run", "ae/server/api_routes.py" "--host", "0.0.0.0", "--port", "8000" ]
+CMD [".venv/bin/uvicorn", "ae.server.api_routes:app", "--reload", "--loop", "asyncio", "--host", "0.0.0.0", "--port", "8000"]
+# CMD [".venv/bin/uvicorn", "fastapi", "run", "ae/server/api_routes.py" "--host", "0.0.0.0", "--port", "8000" ]
