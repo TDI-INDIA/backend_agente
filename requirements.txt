@@ -146,7 +146,9 @@ pdfplumber==0.11.1
 pillow==10.3.0
     # via pdfplumber
 playwright==1.44.0
+
     # via agent-e (pyproject.toml)
+playwright-stealth==1.0.6
 proto-plus==1.23.0
     # via
     #   google-ai-generativelanguage
