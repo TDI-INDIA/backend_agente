@@ -30,7 +30,7 @@ RUN . .venv/bin/activate && pip install fastapi uvicorn playwright && playwright
 RUN uv pip compile pyproject.toml -o requirements.txt
 RUN uv pip install -r requirements.txt 
 CMD ["playwright", "install chrome"]
-
+RUN pip install playwright-stealth
 # Expose port 8000
 EXPOSE 8000
 
